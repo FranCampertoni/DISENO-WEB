@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP</title>
+</head>
+<body>
+    <table style="border: 1px solid">
+        <thead>
+        <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+        </table>
+        <br>
+        <button onclick="insertRow()">Insert row</button>
+        <button onclick="deleteRow()">Delete row</button>
+    <p class="aaa" id="Helloworld" onclick="getById()">TEST</p>
+    <p class="aaa" id="Hi" onclick="getElementByClass()">TEST2</p>
+    <button onclick="getById()">Boton</button>
+    <h1>
+        <p class="test"></p>
+        <p class="test"></p>
+    </h1>
+    <script>
+        function getById() {
+            document.getElementById('Helloworld').innerHTML = 'HI'
+        }
+        function getElementByClass(){
+            document.getElementsByClassName("aaa")[1].innerHTML = 'HI2'
+        }
+        function addRow(){
+            
+        }
+    </script>
+
+</body>
+</html>
